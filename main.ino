@@ -316,7 +316,7 @@ void follow_line(){
 		* So this provides more information on the position of bot to control it 
 	*/
 //	if(!(zig_zag && left_sen_data == !MODE && middle_sen_data == !MODE && right_sen_data == !MODE))
-	error = ( (15 * sensor_data[2]) - (15 * sensor_data[0]) ) / (sensor_data[0] + sensor_data[1] + sensor_data[0]);
+	error = ( (15 * sensor_data[2]) - (15 * sensor_data[0]) ) / (sensor_data[0] + sensor_data[1] + sensor_data[2]);
 	
 
 	// When MODE is BLACK errors will be +ve when bot have to turn right 
